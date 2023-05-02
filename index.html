@@ -10,6 +10,7 @@
     <head>
         <title>PabloTabares</title>
         <link rel="shortcut icon" type="image/png" href="img/perfil3-copia.png">
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
       </head>
     <!--Titulo de icono-->
     <link rel="shortcut icon" href="img/perfil3.png">
@@ -43,7 +44,6 @@
             <ul class="menu">
                 <li><a href="#main">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#newSkills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact-form">Contact me</a></li>
@@ -59,11 +59,11 @@
             <h1>I'm Pablo <font color="17dlac">Tabares.</font>
             </h1>
             <!--Detalles-->
-            <p class="details">I'm a software developer.</p>
+            <p class="details">I'm a Frontend developer.</p>
             <br>
             <!--CV BTN-->
-            <a href="img/HV'28'04'23.pdf" download="">
-                <button class="continue-application">
+            <a href="img/01'05'23.pdf" download="">
+                <button class="continue-application" id="fold">
                     <div>
                         <div class="pencil"></div>
                         <div class="folder">
@@ -77,7 +77,7 @@
                             <div class="paper"></div>
                         </div>
                     </div>
-                    Continue Cv
+                    Download Cv
                 </button>
             </a>
         </div>
@@ -100,9 +100,37 @@
             <h1>About Me</h1>
             <h2>Frontend Developer</h2>
             <br>
-            <p>Hi, I'm Pablo Tabares, frontend developer, I'm from Colombia and I'm 19 years old. I consider myself a very disciplined person, I'm here to improve and optimize what you ask me. I try to improve day by day, currently I'm learning frameworks like Vue.Js, among others, open to learn what you need.
+            <p>A passionate frontend developer from Colombia. I am a very disciplined person who likes to face challenges day by day, constantly learning, developing new projects for the community.
             </p>
-            <!--btn-->
+            <ul>
+                <li>
+                    <lord-icon
+                    src="https://cdn.lordicon.com/gqqykmqo.json"
+                    trigger="hover"
+                    colors="outline:#121331,primary:#17d1ac,secondary:#ad6836,tertiary:#17d1ac,quaternary:#f3c3ba"
+                    style="width:60px;height:60px">
+                    </lord-icon>
+                    Open to learn the language you need in an optimal way
+                </li>
+                <li>
+                    <lord-icon
+                    src="https://cdn.lordicon.com/gqqykmqo.json"
+                    trigger="hover"
+                    colors="outline:#121331,primary:#17d1ac,secondary:#ad6836,tertiary:#17d1ac,quaternary:#f3c3ba"
+                    style="width:60px;height:60px">
+                    </lord-icon> 
+                    I work with JavaScript,Vue.Js and so on!
+                </li>
+                <li>
+                    <lord-icon
+                    src="https://cdn.lordicon.com/gqqykmqo.json"
+                    trigger="hover"
+                    colors="outline:#121331,primary:#17d1ac,secondary:#ad6836,tertiary:#17d1ac,quaternary:#f3c3ba"
+                    style="width:60px;height:60px">
+                    </lord-icon> 
+                    Great UI/UX experience
+                </li>
+              </ul>
         </div>
         <!--about-model-img-->
         <div class="about-model">
@@ -110,35 +138,6 @@
         </div>
     </section>
     </div>
-    <!--Services-->
-    <section id="services">
-        <!--services heading-->
-        <div class="s-heading">
-            <h1>Services</h1>
-            <p>These are the services I offer</p>
-        </div>
-        <!--services-box-container-->
-        <div class="s-b-container">
-            <!--box-1-->
-            <div class="s-box">
-                <!--services-box-img-->
-                <div class="s-b-img">
-                    <!--Type-->
-                    <div class="s-type">Front End</div>
-                    <!--img-->
-                    <img src="img/s1-copia.png">
-                </div>
-                <!--services-box-text-->
-                <div class="s-b-text">
-                    <p>Currently I have the basics of front-end, so I continue studying and I continue to prepare myself
-                        to improve in the UI - UX.</p>
-                </div>
-            </div>
-            <!--box-2-->
-            
-        </div>
-    </section>
-
 
     <!--New Skills Section-->
     <section id="newSkills">
@@ -151,7 +150,7 @@
                     <div class="icon"><ion-icon name="earth-outline"></ion-icon></div>
                     <div class="text">
                         <h1>Bilingual</h1>
-                        <p>Spanish - conversational English</p>
+                        <p>Spanish -Level B2</p>
                     </div>
                 </div>
             </div>
@@ -160,7 +159,7 @@
                     <div class="icon"><ion-icon name="logo-html5"></ion-icon></div>
                     <div class="text">
                         <h1>Html</h1>
-                        <p>Best practices and good bases</p>
+                        <p>Solid experience in web projects</p>
                     </div>
                 </div>
             </div>
@@ -169,7 +168,7 @@
                     <div class="icon"><ion-icon name="logo-css3"></ion-icon></div>
                     <div class="text">
                         <h1>Css</h1>
-                        <p>Creative and good fundamentals</p>
+                        <p>Solid experience in web projects</p>
                     </div>
                 </div>
             </div>
@@ -178,7 +177,7 @@
                     <div class="icon"><ion-icon name="logo-javascript"></ion-icon></div>
                     <div class="text">
                         <h1>Javascript</h1>
-                        <p>I have of the bases </p>
+                        <p>Experience in web projects</p>
                     </div>
                 </div>
             </div>
@@ -245,7 +244,7 @@
                         <img src="img/PortfolioProject.png" alt="">
                     </div>
                     <h2>Portfolio</h2>
-                    <p>Made in html, css and javascript. This is my first completed project, with time I will need to
+                    <p> This is my first completed project, with time I will need to
                         add new projects, also new knowledge that I am acquiring as other languages,and other sections
                         that arise over time.</p>
                     <hr>
@@ -262,8 +261,7 @@
                         <img src="img/AppGymroject.png" alt="">
                     </div>
                     <h2>Gym application</h2>
-                    <p>Made in php, javaScript, css.
-                        this application is functional for any gym, allows you to manage and have control of users, the
+                    <p> this application is functional for any gym, allows you to manage and have control of users, the
                         money entered, allows you to create plans for users, also allows you to create exercise
                         routines.</p>
                     <hr>
@@ -272,6 +270,7 @@
                         <i class="fa-brands fa-js" id="JavascriptIcon"></i>
                         <i class="fa-brands fa-php" id="Phpicon"></i>
                         <i class="fa-brands fa-css3-alt" id="Cssicon"></i>
+                        
                     </div>
                 </div>
             </a>

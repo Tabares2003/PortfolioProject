@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
 /*Documento css*/
 body{
     margin: 0px;
@@ -31,7 +32,7 @@ a{
     box-sizing: border-box;
     background-color: #edf1fd;
     position: relative;
-    background-image: url("../img/Picsart-Copia.jpg");
+    background-image: url("../img/fondofinal1.png");
     background-repeat: no-repeat;
     background-size: 1330px;
     background-position: right bottom;
@@ -52,7 +53,7 @@ nav{
     padding: 10px 50px;
     background-color: #f4f7ff;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
-    z-index: 1;
+    z-index: 10;
 }
 .menu{
     display: flex;
@@ -86,7 +87,7 @@ nav{
 .name p:nth-child(1),
 .name .details{
     color: #6c707c;
-    font-size: 16px;
+    font-size: 22px;
 }
 .name h1{
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -142,49 +143,43 @@ nav{
     bottom: -5px;
 }
 
+
 /*********************************************FIN OF ABOUT***************************************************/
 #about{
     width: 100%;
-    height: 89vh;
+    height: 91vh;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 50px 5% 0px 5%;
+    padding: 60px 5% 0px 5%;
+    font-family: 'Poppins', sans-serif;
 }
+#about .about-text {
+    margin-bottom: 20px;
+  }
 .about-text{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 50%;
+    text-align: center;
 }
 .about-text h1{
-    font-size: 5rem;
+    font-size: 70px;
     color: #17d1ac;
+    font-weight: 800;
 }
 .about-text h2{
-    font-size: 3rem;
+    font-size: 40px;
     color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 700;
 }
-
 .about-text h1, h2{
-    margin: 0px;
-    padding: 0px;
+    margin: -20px;
+    padding: -9px;
 }
 .about-text p{
-    font-size: 1.2rem;
+    font-size: 20px;
     color: rgba(251, 251, 251, 0.90);
-}
-.about-text button{
-    width: 180px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    background-color: #17d1ac;
-}
-.about-text button:hover{
-    color: #FFFFFF;
-    transition: all ease 0.3s;
+    font-weight: 600;
 }
 #linkedin:hover{
     color: #0429e5;
@@ -195,106 +190,21 @@ nav{
 #github:hover{
     color: rgb(77, 77, 77);
 }
+#fold{
+    font-family: 'Poppins', sans-serif;
+}
+#about li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+  }
+#about ul{
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+  
 /*********************************************INICIO ABOUT***************************************************/
-
-
-
-/**********************************************NEW SERVICES*************************************************/
-
-#services{
-    width: 100%;
-    height: 90vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-}
-.s-heading h1{
-    color: #FFFFFF;
-    font-size: 3rem;
-    margin: 0px;
-    padding: 0px;
-
-}
-.s-heading p{
-    color: rgba(249, 249, 249, 0.30);
-    font-size: 1rem;
-    margin: 0px;
-    padding: 0px;
-}
-.s-heading{
-    text-align: center;
-    margin: 20px 0px;
-}
-.s-box{
-    background-color: #2b2b2b;
-    width: 350px;
-    height: 500px;
-    margin: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0,0.1);
-    position: relative;
-}
-.s-b-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.s-b-img{
-    width: 100%;
-    height: 70%;
-}
-.s-b-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.s-b-text{
-    width: 100%;
-    height: 30%;
-    background-color: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.s-b-text p{
-    margin: 0px;
-    color: #FFFFFF;
-    font-size: 1.1rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: block;
-    display: -webkit-box;
-    max-width: 80%;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-}
-.s-type{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #FFFFFF;
-    background-color: #151515;
-    padding: 10px 15px;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-}
-.s-box:hover{   /*Animacion Services*/
-    transform: translateY(-10px);
-    transition: all ease 0.3s;
-}
-.s-b-text a:hover{
-    color: rgba(255, 255, 255,0.50);
-}
-/**********************************************END SERVICES SKILLS*************************************************/
-
 /**********************************************NEW SKILLS*************************************************/
 #newSkills{
     display: flex;
@@ -412,11 +322,7 @@ nav{
     color: #fff;
 
 }
-/**********************************************END NEW SKILLS*************************************************/
-
-
 /**********************************************INICIO PORTFOLIO SKILLS*************************************************/
-
 .cabeceragaleria{
     background-color: transparent;
     min-height: 110vh;
@@ -425,7 +331,6 @@ nav{
     position: relative;
     font-family: 'Poppins', sans-serif;
 }
-
 .cabeceragaleria h1{ /*Estilo titulo*/
     font-size: var(--titulos);
     color: #fff;
@@ -440,7 +345,7 @@ nav{
 }
 .cabeceragaleria h2{
     font-size: var(--subtitulos);
-    font-weight: 300;
+    font-weight: 600;
     color: #fff;
     text-align: center;
     color: rgba(255, 255, 255, 0.852);
@@ -498,8 +403,8 @@ nav{
     border-radius: 14px;
     overflow: hidden;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .cover__card img{
@@ -1016,31 +921,22 @@ footer p{                   /*Estilo*/
           transform: rotate(1800deg);
         }
       }
-      
 }
-
-
-
-
-
-
-
-
 /*INICIO EDICION BOTON CV*/
 .continue-application {
     --color: #fff;
-    --background: #404660;
-    --background-hover: #3A4059;
-    --background-left: #2B3044;
+    --background: #6c707cbb;
+    --background-hover: #6c707c;
+    --background-left: #17d1acb0;
     --folder: #F3E9CB;
     --folder-inner: #BEB393;
     --paper: #FFFFFF;
-    --paper-lines: #BBC1E1;
+    --paper-lines: #000000;
     --paper-behind: #E1E6F9;
     --pencil-cap: #fff;
-    --pencil-top: #275EFE;
+    --pencil-top: #17d1ac;
     --pencil-middle: #fff;
-    --pencil-bottom: #5C86FF;
+    --pencil-bottom: #17d1ac;
     --shadow: rgba(13, 15, 25, .2);
     border: none;
     outline: none;
