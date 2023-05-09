@@ -322,72 +322,6 @@ nav{
     color: #fff;
 
 }
-/**********************************************INICIO PORTFOLIO SKILLS*************************************************/
-.cabeceragaleria{
-    background-color: transparent;
-    min-height: 110vh;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-}
-.cabeceragaleria h1{ /*Estilo titulo*/
-    font-size: var(--titulos);
-    color: #fff;
-    margin-bottom: var(--espacios);
-    text-align: center;
-    font-size: 3rem;
-    padding: 0px;
-    margin-top: 20px; /* Nuevo */
-    padding: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.cabeceragaleria h2{
-    font-size: var(--subtitulos);
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.852);
-    font-size: 20px;
-    margin: 0px;
-    padding-top: 10px;
-    text-align: center;
-    margin-top: 10px;
-}
-.s-b-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.container__cards{
-    width:100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.card{
-    width: 350px;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    background: rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    transition: all 300ms;
-    
-}
 
 .card:hover{
     transform: translateY(-10px);
@@ -457,9 +391,116 @@ nav{
 #Cssicon{
     color: #1b8fc5 !important;
 }
-#Htmlicon{
-    color: rgb(217, 53, 53) ;
+
+
+
+
+#proyectos {
+    background-color: transparent;
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;  
+    transition: all 300ms;
 }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .proyecto h2{
+    color: white;
+  }
+  .proyecto img{
+    width: 100%;
+    max-width: 415px;
+    height: auto;
+    margin-bottom: 30px;  
+  }
+.proyecto .iconos{
+    margin-top: 30px;
+  }
+  .proyecto .iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .proyecto .iconos img {
+    margin-right: 10px;
+  }
+  .proyecto {
+    margin: 0;
+    padding: 0;
+  }
+  .proyecto img {
+    margin-top: 0;
+  }
+  .proyecto .iconos img:last-child {
+    margin-right: 0;
+  }
+    .proyecto:hover{
+        transform: translateY(-10px);
+        transition: transform 0.3s ease;
+    }
+    #HtmltIcon{
+        color: orange;
+    }
+    #Reacticon{
+        color: #0429e5;
+    }
+    #Sassicon{
+        color: palevioletred;
+    }
+    .proyecto .iconos i{
+        font-size: 35px;
+        margin-bottom: 10px;
+        margin-right: 30px;
+    }
+    .cabeceragaleria h1{ /*Estilo titulo*/
+        font-size: var(--titulos);
+        color: #fff;
+        margin-bottom: var(--espacios);
+        text-align: center;
+        font-size: 3rem;
+        padding: 0px;
+        margin-top: 20px; /* Nuevo */
+        padding: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 40px;
+    }
+    .cabeceragaleria h2{
+        font-size: var(--subtitulos);
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.852);
+        font-size: 20px;
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+
+      /*********************************FIN PORTFOLIO SECTION*****************************************/
+
 
 
 @media screen and (max-width:1200px) {
@@ -922,6 +963,10 @@ footer p{                   /*Estilo*/
         }
       }
 }
+
+/*Fin loading*/
+
+
 /*INICIO EDICION BOTON CV*/
 .continue-application {
     --color: #fff;
@@ -1120,3 +1165,22 @@ footer p{                   /*Estilo*/
     --pex: -24px;
   }
   /*FIN HOVER BOTON DESCARGAR CV*/
+
+
+
+    /*Responsive portfolio*/
+
+      @media (max-width: 768px) {
+        .contenedor {
+          justify-content: center;
+        }
+        
+        .proyecto {
+          max-width: 100%;
+        }
+        .proyecto {
+            margin-bottom: 30px;
+          }
+      }
+
+    /*Fin responsive portoflio*/
